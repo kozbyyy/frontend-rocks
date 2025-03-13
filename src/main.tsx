@@ -9,7 +9,7 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route path="/frontend-rocks" element={<App />} />
-        <Route path="/frontend-rocks/dettaglio/:id" element={<Detail />} />
+        <Route path="/frontend-rocks/dettaglio:id" element={<Detail />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
