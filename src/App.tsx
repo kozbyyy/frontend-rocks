@@ -1,8 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
+
+export const Detail = () => {
+  const { id } = useParams();
+  return <div className="text-6xl">Dettaglio: {id}</div>
+}
 
 export const App = () => {
   const [count, setCount] = useState(0);
-  const [title, setTitle] = useState("PokeTest");
+  const [title, setTitle] = useState("Poketest");
+
+useEffect(() => {
+  if (count === 727) {
+    setTitle("727 WYSI")
+  }
+},[count])  
 
   return (
     <div className="h-dvh flex flex-col items-center justify-center">
