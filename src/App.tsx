@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import { UNSAFE_DataWithResponseInit } from "react-router";
 import { PokeAPI } from "./pokeapiClient";
-import { setDefaultAutoSelectFamily } from "net";
 
 
 async function fetchData(): Promise<CardProps[]> {
